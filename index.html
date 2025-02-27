@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Hữu Thắng- ITF Panda</title>
+  <style>
+    *,
+    *:before,
+    *:after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --theme-color: #222425;
+      --gray--02: #3b3d3e;
+      --blue--02: #74b7e3;
+    }
+
+    body {
+      background-color: var(--theme-color);
+      width: 100%;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    header .img-cover {
+      width: 1000px;
+      height: 200px;
+    }
+
+    header .img-cover img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    header .img-avatar {
+      width: 185px;
+      height: 185px;
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    header .img-avatar img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    main .content {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 100px;
+      width: 900px;
+      height: 500px;
+      color: #fff;
+    }
+
+    main .content .info {
+      position: absolute;
+      color: #fff;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .content .media {
+      position: absolute;
+      top: 100px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: var(--gray--02);
+    }
+
+    .content .media .list-media {
+      padding: 5px 0;
+    }
+
+    .content .media .list-media img {
+      margin-right: 30px;
+      width: 300px;
+    }
+
+    .content .video {
+      position: absolute;
+      top: 400px !important;
+    }
+
+    /* 
+@media only screen and (max-width: 500px) {
+    header{
+        width: 100%;
+    }
+    header .img-cover {
+        height: 150px;
+    }
+
+    header .img-avatar {
+        top: 100px;
+        width: 100px;
+        height: 100px;
+    }
+
+    main .content {
+        top: 70px;
+        width: 450px;
+        height: 400px;
+    }
+    .content .line{
+        width: 350px;
+        border-top: 1px solid #fff;
+    }
+    .content .media{
+        position: absolute;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--gray--02);
+        width: 350px;
+    }
+    .content .media .list-media{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .content .media .list-media img{
+        width: 150px;
+    }
+    .content .video{
+        top: 300px !important;
+    }
+} */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="img-cover">
+        <img src="./assets/image/bg.png" alt="img-cover">
+      </div>
+      <div class="img-avatar">
+        <img src="./assets/image/a.jpg" alt="img-avatar">
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="info">
+          <h2>Nguyễn Hữu Thắng</h2>
+          <p><strong>Lớp : </strong>D24_TH03</p>
+          <p><strong>MSSV : </strong>DH52400800</p>
+        </div>
+        <div class="line"></div>
+        <div class="media">
+          <h2>Ảnh</h2>
+          <div class="list-media">
+            <img src="./assets/image/img1.jpg" alt="img">
+            <img src="./assets/image/img1.jpg" alt="img">
+          </div>
+        </div>
+        <div class="media video">
+          <h2>Video</h2>
+          <div class="list-media">
+            <video width="400" controls>
+              <source src="./assets/video/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+        </div>
+      </div>
+  </div>
+  </main>
+  </div>
+</body>
+
+</html>
